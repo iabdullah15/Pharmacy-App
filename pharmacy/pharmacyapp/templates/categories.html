@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% load static %} {% block styles %} {{ block.super }}
+<link
+  rel="preload"
+  as="style"
+  href="{% static 'css/categories.css' %}"
+  onload="this.rel = 'stylesheet'" />
+
+{% endblock %} {% block content %}
+
+<section class="category-section">
+  <h1 class="category-heading">Categories</h1>
+
+  <div class="categories">
+    <div class="container">
+      <div class="row row-cols-xs-4">
+        {% for item in category %}
+        <div class="col-lg-3 col-sm-6 col-xs-6 category-card">
+          <div class="card">
+            <img
+              src="{% static 'img/' %}{{ item.category_name }}.jpg"
+              class="card-img-top" width="206" height="206"
+              alt="..." />
+            <!-- <i class="fa-solid fa-heart-circle-plus fa-4x"></i> -->
+            <div class="card-body">
+              <h5 class="card-title">{{item.category_name}}</h5>
+              <!-- <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p> -->
+              <a
+                href="{% url 'products' item.id %}"
+                class="btn btn-sm btn-outline-primary category-btn"
+                >Go somewhere</a
+              >
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

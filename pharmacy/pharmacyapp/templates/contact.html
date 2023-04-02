@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% load static %} {% block styles %} {{block.super}}
+
+<link rel="stylesheet" href="{% static 'css/contact_us.css' %}" />
+
+{% endblock %} {% block content %}
+<div class="container-fluid form-container">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <form method="post">
+        {% csrf_token %} {{ form.as_p }}
+        <input class="btn btn-outline-primary" type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d658.5710073074098!2d74.3033759848766!3d31.456691392482302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d31.456871999999997!2d74.3033698!5e0!3m2!1sen!2s!4v1676504257806!5m2!1sen!2s"
+        width="500"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

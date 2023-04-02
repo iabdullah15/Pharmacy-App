@@ -1,0 +1,42 @@
+#main-section {
+  background-color: aliceblue;
+  padding: 0;
+}
+
+#about {
+  padding-top: 6rem;
+}
+
+.about-container {
+  border-radius: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.about-description {
+  width: 80%;
+}
+
+@media (max-width: 768px) and (min-width: 300px) {
+  .description-col {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  .about-heading {
+    text-align: center;
+  }
+
+  .about-description {
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+
+  .img-col {
+    padding-bottom: 2rem;
+  }
+}

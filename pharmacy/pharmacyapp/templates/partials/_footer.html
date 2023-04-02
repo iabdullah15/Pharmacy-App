@@ -1,0 +1,39 @@
+{% load static %}
+<footer id="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 footer-col brand-col">
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <i class="fa-sharp fa-solid fa-prescription-bottle-medical fa-2x"></i>
+          Pharmacy
+        </a>
+      </div>
+
+      <div class="col-lg-4 footer-col">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+
+          <li>
+            <a class="nav-link" href="{% url 'categories' %}">Medicines</a>
+          </li>
+          <li><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+          <li><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 footer-col">
+        <button class="btn btn-dark btn-lg download-btn">
+          <i class="fa-brands fa-app-store"></i>
+          Coming soon
+        </button>
+        <button class="btn btn-light btn-lg download-btn">
+          <i class="fa-brands fa-google-play"></i>
+          Coming Soon
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+  <p class="copyright">Copyright @xyz Pharmacy</p>
+</footer>

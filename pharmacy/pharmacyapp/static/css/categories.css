@@ -1,0 +1,45 @@
+#main-section {
+  padding: 0;
+}
+
+.category-section {
+  text-align: center;
+  background-color: #e3f2fd;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.category-heading {
+  text-align: center;
+  color: black;
+}
+
+.categories {
+  padding-top: 5rem;
+}
+
+.category-card {
+  margin-top: 3rem;
+}
+
+.card {
+  width: 13rem;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+.category-btn {
+  border-radius: 50px;
+}
+
+@media (max-width: 575px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 13rem;
+  }
+}

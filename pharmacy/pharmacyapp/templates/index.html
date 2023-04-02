@@ -1,0 +1,80 @@
+{% extends 'base.html' %} {% load static %} 
+
+{% block homecontent %}
+<section
+  id="top-section-2"
+  class="home-page-section"
+  style="background-color: #e3f2fd">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="top-section-2-heading-title">
+          <h1>Prescription Collection made easy</h1>
+        </div>
+        <div class="top-section-2-description">
+          <p>
+            At xyz pharmacy, we believe in convenience for our patients as well
+            as providing outstanding healthcare. That's why we've invested in
+            the latest technology out there, allowing us to provide 24/7
+            prescription collection.
+          </p>
+        </div>
+        <div class="top-section-3-download-btns">
+          <button class="btn btn-dark btn-lg download-btn">
+            <i class="fa-brands fa-app-store"></i>
+            Coming soon
+          </button>
+          <button class="btn btn-light btn-lg download-btn">
+            <i class="fa-brands fa-google-play"></i>
+            Coming Soon
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="top-section-4-location">
+          <h3>Coming soon to Lahore, Islamabad and Karachi</h3>
+        </div>
+
+        <div class="top-section-5-img">
+          <img src="{% static 'img/medical_image.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %} 
+
+{% block content %}
+<section class="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-clock fa-4x" style="padding-bottom: 16px"></i>
+        <h4>We deliver 24/7!</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et
+          odio sit harum sunt suscipit
+        </p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-pills fa-4x" style="padding-bottom: 16px"></i>
+        <h4>Authentic medicines</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quasi
+          ipsum possimus dolore voluptatibus soluta.
+        </p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-hospital fa-4x" style="padding-bottom: 16px"></i>
+        <h4>Secure payment</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore
+          perspiciatis reprehenderit voluptates asperiores rerum.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

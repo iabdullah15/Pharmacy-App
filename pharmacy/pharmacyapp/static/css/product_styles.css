@@ -1,0 +1,15 @@
+#main-section {
+    padding: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #e3f2fd;
+  }
+  
+  .product-card {
+    width: 14rem;
+    margin-top: 2rem;
+    /* box-shadow: 10px 8px 5px lightblue; */
+    box-shadow: 5px 5px 5px lightblue;
+    background-color: rgb(243, 250, 252);
+  }
+  
